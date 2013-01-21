@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Product:</b>
+  <%= @info.product_id %>
+</p>
+
+<p>
+  <b>Unit:</b>
+  <%= @info.unit %>
+</p>
+
+<p>
+  <b>Unit price:</b>
+  <%= @info.unit_price %>
+</p>
+
+<p>
+  <b>Effective date:</b>
+  <%= @info.effective_date %>
+</p>
+
+<p>
+  <b>Purchase date:</b>
+  <%= @info.purchase_date %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @info.description %>
+</p>
+
+
+<%= link_to 'Edit', edit_info_path(@info) %> |
+<%= link_to 'Back', infos_path %>

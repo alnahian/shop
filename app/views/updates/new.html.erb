@@ -1,0 +1,25 @@
+<%= form_for([@product, @product.updates.new]) do |f| %> 
+  <div class="field"> 
+    <%= f.label :unit %><br /> 
+    <%= f.text_field :unit %> 
+  </div> 
+  <div class="field"> 
+    <%= f.label :unit_price %><br /> 
+    <%= f.text_field :unit_price %> 
+  </div> 
+  <div class="field"> 
+    <%= f.label :effective_date %><br /> 
+    <%= f.datetime_select :effective_date %> 
+  </div> 
+  <div class="field"> 
+    <%= f.label :purchase_date %><br /> 
+    <%= f.datetime_select :purchase_date %> 
+  </div> 
+  <div class="field"> 
+    <%= f.label :description %><br /> 
+    <%= f.text_area :unit %> 
+  </div> 
+  <div class="actions"> 
+    <%= f.submit 'Add' %> 
+  </div> 
+<% end %> 

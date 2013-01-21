@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  product_id: 1
+  unit: 9.99
+  unit_price: 9.99
+  effective_date: 2013-01-19 22:35:25
+  purchase_date: 2013-01-19 22:35:25
+  description: MyText
+
+two:
+  product_id: 1
+  unit: 9.99
+  unit_price: 9.99
+  effective_date: 2013-01-19 22:35:25
+  purchase_date: 2013-01-19 22:35:25
+  description: MyText

@@ -1,0 +1,14 @@
+<%= div_for update do %> 
+  <h3> 
+    &lt;<%= update.effective_date %>&gt; নতুন আপডেট: 
+    <span class='actions'> 
+      <%= link_to 'Delete', product_update_path(:product_id => @product,  
+:id => update), :confirm => 'Are you sure?', :method => :delete %> 
+    </span> 
+  </h3> 
+  <div><%= update.unit %></div> 
+  <div><%= update.unit_price %> </div>
+<div>  <%= update.effective_date %> </div>
+<div>  <%= update.purchase_date %> </div>
+<div>  <%= update.description %> </div>
+<% end %> 
