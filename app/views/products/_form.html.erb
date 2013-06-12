@@ -17,7 +17,7 @@
   </div>
   <div class="field">
     <%= f.label :পণ্যের_বিবরণ %><br />
-    <%= f.text_area :description %>
+    <%= f.text_area :description, rows: 6 %>
   </div>
   <div class="field">
     <%= f.label :ছবি %><br />
@@ -32,6 +32,6 @@
     <%= f.datetime_select :published_at %>
   </div>
   <div class="actions">
-    <%= f.submit 'তালিকায় যোগ করুন' %>
+    <%= f.submit 'তালিকায় যোগ করুন',class: "btn btn-default btn-warning" %>
   </div>
 <% end %>

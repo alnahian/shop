@@ -2,13 +2,14 @@
   <h3> 
     <%= product.title %> 
     <span class='actions'> 
-      <%= link_to "Edit", edit_product_path(product) %> 
-      <%= link_to "Delete", product, :confirm => "Are you sure?",  
+      <%= link_to "এডিট করুন", edit_product_path(product) %> 
+      <%= link_to "মুছে ফেলুন", product, :confirm => "Are you sure?",  
 :method => :delete %> 
     </span> 
   </h3> 
-  <%= product.description %> 
   <%= image_tag(product.image_url) %> 
+  <%= product.description %> 
+  
   <%= product.price %>
   <%= product.published_at %>    
 <% end %> 
