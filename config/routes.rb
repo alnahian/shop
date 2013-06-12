@@ -1,10 +1,16 @@
 Shop::Application.routes.draw do
 
+  resources :line_items
+
+  resources :carts
+
+  get "store/index"
+
   resources :updates
 
   resources :infos
 
-  root :to => "products#index" 
+  root :to => "store#index" , :as => 'store'
   
   resources :products	do
 	  resources :updates
