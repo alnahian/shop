@@ -11,6 +11,15 @@
 
 <%= render 'layouts/header' %>
 
+
+<div id="side">
+<div class="span3">
+	<div id="cart">
+		<%= render @cart %>
+	</div>
+</div>
+</div>
+
 <div class="container">
       <%= yield %>
 	  <%= render 'layouts/footer' %>

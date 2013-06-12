@@ -2,15 +2,26 @@
 <p id="notice"><%= notice %></p>
 <% end %>
 
+<h1>List of products</h1>
 
+
+<table>
+	<tr>
+		<td>Image</td>
+		<td>Title</td>
+		<td>Description</td>
+		<td>Price</td>
+	</tr>
 <% @products.each do |product| %>
-<div class="entry">
-<%= image_tag(product.image_url) %>
-<h3><%= product.title %></h3>
-<%= product.description %>
-<div class="price_line">
-<span class="price"><%= product.price %></span>
-<%= button_to 'Add to Cart', line_items_path(:product_id => product) %>
-</div>
-</div>
+	<div class="span9">
+	<tr>
+		<td><%= image_tag(product.image_url) %></td>
+		<td><h3><%= product.title %></h3></td>
+		<td><%= product.description %></td>
+		<td><%= product.price %></td>
+		<td><%= button_to 'Add to Cart', line_items_path(:product_id => product),class: "btn btn-default btn-warning" %></td>
+	</tr>	
+	</div>
+	<br />
 <% end %>
+</table>
